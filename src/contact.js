@@ -1,6 +1,8 @@
 let contactLoad = () => {
     
     const content = document.getElementById('content');
+    const bodyHolderContact = document.createElement('div');
+    bodyHolderContact.setAttribute('id','bodyHolderContact');
 
     const homeTab = (tabBar) => {
         const home = document.createElement('div');
@@ -65,7 +67,8 @@ let contactLoad = () => {
     contactInformation.appendChild(address);
     contactInformation.appendChild(paymentInformation);
 
-    content.appendChild(contactInformation);
+    bodyHolderContact.appendChild(contactInformation);
+    content.appendChild(bodyHolderContact);
 }
 
 export default contactLoad;

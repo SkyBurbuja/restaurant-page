@@ -1,6 +1,8 @@
  let menuLoad = () => {
 
     const content = document.getElementById('content');
+    const bodyHolderMenu = document.createElement('div');
+    bodyHolderMenu.setAttribute('id','bodyHolderMenu');
 
     const homeTab = (tabBar) => {
         const home = document.createElement('div');
@@ -69,19 +71,20 @@
         tableMenu.appendChild(menuItem('DUGO',5));
         tableMenu.appendChild(menuItem('TENGA',15));
 
-        document.getElementById('content').appendChild(tableMenu);
+        menuDisplay.appendChild(tableMenu);
 
         return menuDisplay;
     }
 
     
-        const aboutUs = document.createElement('div');
-        aboutUs.setAttribute('id','menu');
+        const newMenu = document.createElement('div');
+        newMenu.setAttribute('id','menu');
         const menuDisplay = menuGenerator();
-        aboutUs.appendChild(menuDisplay);
+        newMenu.appendChild(menuDisplay);
         
 
-        content.appendChild(aboutUs);
+        bodyHolderMenu.appendChild(newMenu);
+        content.appendChild(bodyHolderMenu);
     
 
 

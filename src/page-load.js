@@ -1,5 +1,7 @@
 let pageLoad = () => {
     const content = document.getElementById('content');
+    const bodyHolderHome = document.createElement('div');
+    bodyHolderHome.setAttribute('id','bodyHolderHome');
 
     const homeTab = (tabBar) => {
         const home = document.createElement('div');
@@ -53,14 +55,16 @@ let pageLoad = () => {
     image.setAttribute('alt', 'Kebabs on a grill');
     imageContainer.appendChild(image);
 
-    content.appendChild(imageContainer);
+    bodyHolderHome.appendChild(imageContainer);
 
     const aboutUs = document.createElement('div');
     aboutUs.setAttribute('id', 'aboutUs');
     aboutUs.innerHTML = 'Big Fam BBQ is the best stand i\'ve ever been to! <br> The food is delicious and the staff are professional and friendly.<br>';
 
 
-    content.appendChild(aboutUs);
+    bodyHolderHome.appendChild(aboutUs);
+
+    content.appendChild(bodyHolderHome);
 
 };
 

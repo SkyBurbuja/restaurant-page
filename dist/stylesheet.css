@@ -13,15 +13,21 @@ body{
 }
 
 #kebabPicture{
-    width:50%;
+    width:50vw;
     height: auto;
+    display: inline-block;
+
+}
+
+#aboutUs{
+    display: inline-block;
 }
 
 #tabBar{
     display: flex;
-    gap: 32%;
+    gap: 1vw;
     width: 100%;
-    height: 40px;
+    height: 60px;
     background-color: lightgreen;
     font-size: 24px;
 }
@@ -30,4 +36,41 @@ body{
     background-color: black;
     border: 5px solid white;
     border-radius: 5px;
+    padding: 10px;
+    vertical-align: center;
+}
+
+.tabButton:hover{
+    background-color: red;
+}
+
+#bodyHolderHome{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+#bodyHolderMenu{
+    margin: auto;
+    width: 50%;
+    
+}
+
+
+#bodyHolderContact{
+
+}
+ul{
+    display: grid;
+    font-size: 30px;
+    padding-left: 0%;
+    border: 10px solid red;
+}
+
+li{
+    color:black;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+    background-color: gray;
+    border: 5px solid black;
 }
