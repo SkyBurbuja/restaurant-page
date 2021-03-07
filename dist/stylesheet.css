@@ -6,9 +6,13 @@ header{
     background-color: grey;
     border: 10px solid white;
     border-radius: 5px;
-    box-shadow: 2px 2px black;
     text-shadow: 2px 2px black;
 }
 body{
     background-color: black;
+}
+
+#kebabPicture{
+    width:50%;
+    height: auto;
 }
